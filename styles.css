@@ -10,21 +10,27 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em;
+    padding: 1em 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+header nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
@@ -32,7 +38,8 @@ nav ul li a {
 aside {
     background-color: #f4f4f4;
     padding: 1em;
-    flex: 1;
+    flex: 0 0 250px;
+    margin-top: 70px; /* Adjust for fixed header */
 }
 
 .profile img {
@@ -52,8 +59,9 @@ aside {
 }
 
 main {
-    flex: 3;
+    flex: 1;
     padding: 1em;
+    margin-top: 70px; /* Adjust for fixed header */
 }
 
 .content-section {
@@ -72,6 +80,7 @@ main {
     aside {
         flex: 1;
         max-width: 250px;
+        margin-top: 0; /* Reset margin for larger screens */
     }
 
     main {
