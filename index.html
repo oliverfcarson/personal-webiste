@@ -8,46 +8,62 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about" id="about-tab">About Me</a></li>
-                <li><a href="#blogs" id="blogs-tab">Blogs</a></li>
-                <li><a href="#guides" id="guides-tab">Guides</a></li>
-                <li><a href="#videos" id="videos-tab">Videos</a></li>
-                <li><a href="#conference" id="conference-tab">Conference History</a></li>
-            </ul>
-        </nav>
+        <button class="menu-toggle" id="mobile-menu">
+            <img src="hamburger-icon.png" alt="Menu"> <!-- Hamburger menu image -->
+        </button>
+        <div class="brand">
+            <span>Manuel Ernesto</span> <!-- Replace with your name or brand -->
+        </div>
     </header>
-
-    <aside>
+    <div class="sidebar" id="sidebar">
         <div class="profile">
             <img src="your-profile-pic.jpg" alt="Your Name">
             <p>Developer Advocate | Contact: your-email@example.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#about" id="about-tab">About Me</a></li>
+                    <li><a href="#projects" id="projects-tab">Projects</a></li>
+                    <li><a href="#services" id="services-tab">Services</a></li>
+                    <li><a href="#store" id="store-tab">Store</a></li>
+                    <li><a href="#blog" id="blog-tab">Blog</a></li>
+                    <li><a href="#cv" id="cv-tab">CV</a></li>
+                    <li><a href="#contact" id="contact-tab">Contact</a></li>
+                </ul>
+            </nav>
             <div class="social-media">
+                <a href="https://github.com/yourprofile"><img src="github-icon.png" alt="GitHub"></a>
                 <a href="https://twitter.com/yourprofile"><img src="twitter-icon.png" alt="Twitter"></a>
                 <a href="https://linkedin.com/in/yourprofile"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                <!-- Add more social media links as needed -->
+                <a href="https://yourrssfeed.com"><img src="rss-icon.png" alt="RSS"></a>
             </div>
         </div>
-    </aside>
+    </div>
 
-    <main>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="main-content" id="main-content">
         <section id="about" class="content-section">
             <!-- About Me Content -->
         </section>
-        <section id="blogs" class="content-section">
-            <!-- Blogs Content -->
+        <section id="projects" class="content-section">
+            <!-- Projects Content -->
         </section>
-        <section id="guides" class="content-section">
-            <!-- Guides Content -->
+        <section id="services" class="content-section">
+            <!-- Services Content -->
         </section>
-        <section id="videos" class="content-section">
-            <!-- Videos Content -->
+        <section id="store" class="content-section">
+            <!-- Store Content -->
         </section>
-        <section id="conference" class="content-section">
-            <!-- Conference History Content -->
+        <section id="blog" class="content-section">
+            <!-- Blog Content -->
         </section>
-    </main>
+        <section id="cv" class="content-section">
+            <!-- CV Content -->
+        </section>
+        <section id="contact" class="content-section">
+            <!-- Contact Content -->
+        </section>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
