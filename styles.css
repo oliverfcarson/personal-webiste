@@ -118,6 +118,53 @@ header .brand {
     display: block;
 }
 
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Increased min-width for larger items */
+    gap: 15px; /* Reduced gap between items */
+    padding: 20px;
+}
+
+.grid-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    max-width: 100%; /* Ensure items fill available space */
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item .item-text {
+    padding: 15px;
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.grid-item p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.grid-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .overlay {
     display: none;
     position: fixed;
@@ -148,5 +195,9 @@ header .brand {
 
     .overlay.active {
         display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust for smaller screens */
     }
 }
